@@ -1,0 +1,240 @@
+2021-11-05 11:17:28.408225 (MainThread): Running with dbt=0.21.0
+2021-11-05 11:17:28.871824 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/upvar/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-05 11:17:28.872550 (MainThread): Tracking: tracking
+2021-11-05 11:17:28.872792 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f003777ab38>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f003777a748>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f003775dc88>]}
+2021-11-05 11:17:28.881931 (MainThread): Partial parsing not enabled
+2021-11-05 11:17:28.889538 (MainThread): Parsing macros/adapters.sql
+2021-11-05 11:17:28.923110 (MainThread): Parsing macros/catalog.sql
+2021-11-05 11:17:28.924756 (MainThread): Parsing macros/materializations/merge.sql
+2021-11-05 11:17:28.928443 (MainThread): Parsing macros/materializations/incremental.sql
+2021-11-05 11:17:28.936344 (MainThread): Parsing macros/materializations/table.sql
+2021-11-05 11:17:28.939291 (MainThread): Parsing macros/materializations/view.sql
+2021-11-05 11:17:28.940544 (MainThread): Parsing macros/materializations/seed.sql
+2021-11-05 11:17:28.944529 (MainThread): Parsing macros/core.sql
+2021-11-05 11:17:28.947974 (MainThread): Parsing macros/adapters/common.sql
+2021-11-05 11:17:28.996209 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-05 11:17:28.998552 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-05 11:17:29.000126 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-05 11:17:29.001665 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-05 11:17:29.010810 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-05 11:17:29.012359 (MainThread): Parsing macros/etc/query.sql
+2021-11-05 11:17:29.013224 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-05 11:17:29.014640 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-05 11:17:29.023586 (MainThread): Parsing macros/materializations/test.sql
+2021-11-05 11:17:29.030058 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-05 11:17:29.051237 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-05 11:17:29.052839 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-05 11:17:29.080433 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-05 11:17:29.097012 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-05 11:17:29.116447 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-05 11:17:29.124992 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-05 11:17:29.126608 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-05 11:17:29.139444 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-05 11:17:29.142919 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-05 11:17:29.149088 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-05 11:17:29.155349 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-05 11:17:29.156732 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-05 11:17:29.157737 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-05 11:17:29.159208 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-05 11:17:29.337999 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.orders".
+2021-11-05 11:17:29.350177 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.customers".
+2021-11-05 11:17:29.353627 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2021-11-05 11:17:29.356811 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_payments".
+2021-11-05 11:17:29.360329 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_customers".
+2021-11-05 11:17:29.402545 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.404233 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.405891 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.408287 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.410342 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.417545 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.426008 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.426310 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.427816 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.429525 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.431244 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.432650 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.434135 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.440186 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.441878 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.443370 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.444773 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.450250 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.450518 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.452195 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.453601 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.460984 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.461294 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-05 11:17:29.474827 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2c9a8b52-db34-40c1-a377-5b27008c675c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0037637320>]}
+2021-11-05 11:17:29.480880 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2c9a8b52-db34-40c1-a377-5b27008c675c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f003762aba8>]}
+2021-11-05 11:17:29.481132 (MainThread): Found 5 models, 20 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 3 seed files, 0 sources, 0 exposures
+2021-11-05 11:17:29.483967 (MainThread): 
+2021-11-05 11:17:29.484487 (MainThread): Acquiring new snowflake connection "master".
+2021-11-05 11:17:29.485781 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_LEAP_STAGING".
+2021-11-05 11:17:29.498073 (ThreadPoolExecutor-0_0): Using snowflake connection "list_LEAP_STAGING".
+2021-11-05 11:17:29.498280 (ThreadPoolExecutor-0_0): On list_LEAP_STAGING: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "connection_name": "list_LEAP_STAGING"} */
+
+    show terse schemas in database LEAP_STAGING
+    limit 10000
+2021-11-05 11:17:29.498372 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-05 11:17:31.561891 (ThreadPoolExecutor-0_0): Failed to get the response. Hanging? method: post, url: https://df61283.us-central1.gcp.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request?request_id=ab0454c4-6984-4e9a-83bb-02e015bfe2da&databaseName=LEAP_STAGING&schemaName=DEFUALT&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=9ba95f5b-4511-4054-b98e-2d72a21c191e, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.5.1 (Linux-4.19.128-microsoft-standard-x86_64-with-Ubuntu-18.04-bionic) CPython/3.6.9', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "PythonConnector", "CLIENT_APP_VERSION": "2.5.1", "SVN_REVISION": null, "ACCOUNT_NAME": "df61283", "LOGIN_NAME": "pratuppal", "CLIENT_ENVIRONMENT": {"APPLICATION": "dbt", "OS": "Linux", "OS_VERSION": "Linux-4.19.128-microsoft-standard-x86_64-with-Ubuntu-18.04-bionic", "PYTHON_VERSION": "3.6.9", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "GCC 8.4.0", "OCSP_MODE": "FAIL_OPEN", "TRACING": 40, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "********", "SESSION_PARAMETERS": {"AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2021-11-05 11:17:31.564135 (ThreadPoolExecutor-0_0): Got an error when attempting to open a snowflake connection: '250003: Failed to get the response. Hanging? method: post, url: https://df61283.us-central1.gcp.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request?request_id=ab0454c4-6984-4e9a-83bb-02e015bfe2da&databaseName=LEAP_STAGING&schemaName=DEFUALT&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=9ba95f5b-4511-4054-b98e-2d72a21c191e'
+2021-11-05 11:17:31.564305 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "connection_name": "list_LEAP_STAGING"} */
+
+    show terse schemas in database LEAP_STAGING
+    limit 10000
+2021-11-05 11:17:31.564389 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-11-05 11:17:31.564562 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2021-11-05 11:17:31.564638 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-11-05 11:17:31.564764 (ThreadPoolExecutor-0_0): On list_LEAP_STAGING: No close available on handle
+2021-11-05 11:17:31.565658 (MainThread): Connection 'master' was properly closed.
+2021-11-05 11:17:31.565779 (MainThread): Connection 'list_LEAP_STAGING' was properly closed.
+2021-11-05 11:17:31.566007 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f003762aba8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f003765e080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f003765e3c8>]}
+2021-11-05 11:17:31.566283 (MainThread): Flushing usage events
+2021-11-05 11:17:32.553772 (MainThread): Encountered an error:
+2021-11-05 11:17:32.554811 (MainThread): Runtime Error
+  Database error while listing schemas in database "LEAP_STAGING"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://df61283.us-central1.gcp.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request?request_id=ab0454c4-6984-4e9a-83bb-02e015bfe2da&databaseName=LEAP_STAGING&schemaName=DEFUALT&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=9ba95f5b-4511-4054-b98e-2d72a21c191e
+2021-11-05 11:17:32.557802 (MainThread): Traceback (most recent call last):
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 234, in open
+    **creds.auth_args()
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/__init__.py", line 50, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/connection.py", line 273, in __init__
+    self.connect(**kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/connection.py", line 484, in connect
+    self.__open_connection()
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/connection.py", line 723, in __open_connection
+    self._authenticate(auth_instance)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/connection.py", line 984, in _authenticate
+    self.__authenticate(self.__preprocess_auth_instance(auth_instance))
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/connection.py", line 1015, in __authenticate
+    session_parameters=self._session_parameters,
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/auth.py", line 246, in authenticate
+    socket_timeout=self._rest._connection.login_timeout,
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/network.py", line 638, in _post_request
+    _include_retry_params=_include_retry_params,
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/network.py", line 720, in fetch
+    session, method, full_url, headers, data, retry_ctx, **kwargs
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/network.py", line 841, in _request_exec_wrapper
+    raise e
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/network.py", line 773, in _request_exec_wrapper
+    self._handle_unknown_error(method, full_url, headers, data, conn)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/network.py", line 888, in _handle_unknown_error
+    "errno": ER_FAILED_TO_REQUEST,
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/errors.py", line 261, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/snowflake/connector/errors.py", line 195, in default_errorhandler
+    cursor=cursor,
+snowflake.connector.errors.OperationalError: 250003: Failed to get the response. Hanging? method: post, url: https://df61283.us-central1.gcp.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request?request_id=ab0454c4-6984-4e9a-83bb-02e015bfe2da&databaseName=LEAP_STAGING&schemaName=DEFUALT&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=9ba95f5b-4511-4054-b98e-2d72a21c191e
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 104, in list_schemas
+    kwargs={'database': database}
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 1000, in execute_macro
+    result = macro_function(**kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 229, in execute
+    fetch=fetch
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 357, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/contracts/connection.py", line 82, in handle
+    self._handle.resolve(self)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/contracts/connection.py", line 108, in resolve
+    return self.opener(connection)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 252, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://df61283.us-central1.gcp.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request?request_id=ab0454c4-6984-4e9a-83bb-02e015bfe2da&databaseName=LEAP_STAGING&schemaName=DEFUALT&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=9ba95f5b-4511-4054-b98e-2d72a21c191e
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/main.py", line 127, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/main.py", line 205, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/main.py", line 258, in run_from_args
+    results = task.run()
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/task/runnable.py", line 452, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/task/runnable.py", line 410, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/task/runnable.py", line 541, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/utils.py", line 482, in connected
+    return func(*args, **kwargs)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/task/runnable.py", line 518, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/home/upvar/dbt-dir/dbt-env/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 111, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "LEAP_STAGING"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://df61283.us-central1.gcp.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request?request_id=ab0454c4-6984-4e9a-83bb-02e015bfe2da&databaseName=LEAP_STAGING&schemaName=DEFUALT&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=9ba95f5b-4511-4054-b98e-2d72a21c191e
+
