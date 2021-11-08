@@ -9,6 +9,6 @@ my-snowflake-db:
       password: Leap@2021
       database: LEAP_STAGING
       warehouse: COMPUTE_WH
-      schema: DEFUALT
+      schema: PUBLIC
       threads: 1
       client_session_keep_alive: False

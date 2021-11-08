@@ -238,3 +238,379 @@ dbt.exceptions.RuntimeException: Runtime Error
   Database Error
     250003: Failed to get the response. Hanging? method: post, url: https://df61283.us-central1.gcp.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request?request_id=ab0454c4-6984-4e9a-83bb-02e015bfe2da&databaseName=LEAP_STAGING&schemaName=DEFUALT&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=9ba95f5b-4511-4054-b98e-2d72a21c191e
 
+2021-11-08 08:35:57.153859 (MainThread): Running with dbt=0.21.0
+2021-11-08 08:35:58.122941 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/upvar/dbt-dir/jaffle_shop', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-08 08:35:58.125889 (MainThread): Tracking: tracking
+2021-11-08 08:35:58.126669 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c965c3d68>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c965c3b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c9deba828>]}
+2021-11-08 08:35:58.154207 (MainThread): Partial parsing not enabled
+2021-11-08 08:35:58.210396 (MainThread): Parsing macros/adapters.sql
+2021-11-08 08:35:58.288689 (MainThread): Parsing macros/catalog.sql
+2021-11-08 08:35:58.292763 (MainThread): Parsing macros/materializations/merge.sql
+2021-11-08 08:35:58.301555 (MainThread): Parsing macros/materializations/incremental.sql
+2021-11-08 08:35:58.321699 (MainThread): Parsing macros/materializations/table.sql
+2021-11-08 08:35:58.328893 (MainThread): Parsing macros/materializations/view.sql
+2021-11-08 08:35:58.332196 (MainThread): Parsing macros/materializations/seed.sql
+2021-11-08 08:35:58.342511 (MainThread): Parsing macros/core.sql
+2021-11-08 08:35:58.350933 (MainThread): Parsing macros/adapters/common.sql
+2021-11-08 08:35:58.472680 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-08 08:35:58.478548 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-08 08:35:58.482636 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-08 08:35:58.486004 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-08 08:35:58.503870 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-08 08:35:58.506401 (MainThread): Parsing macros/etc/query.sql
+2021-11-08 08:35:58.507922 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-08 08:35:58.510185 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-08 08:35:58.524255 (MainThread): Parsing macros/materializations/test.sql
+2021-11-08 08:35:58.534424 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-08 08:35:58.567416 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-08 08:35:58.569904 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-08 08:35:58.613497 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-08 08:35:58.641230 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-08 08:35:58.677001 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-08 08:35:58.695298 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-08 08:35:58.699059 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-08 08:35:58.730806 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-08 08:35:58.740077 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-08 08:35:58.756030 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-08 08:35:58.772581 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-08 08:35:58.775649 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-08 08:35:58.778397 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-08 08:35:58.782263 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-08 08:35:59.279768 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.dbt_table".
+2021-11-08 08:35:59.411063 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-08 08:35:59.415974 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-08 08:35:59.452870 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1af38129-79e3-4490-97a4-676056ae3a36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c9657f5f8>]}
+2021-11-08 08:35:59.468694 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1af38129-79e3-4490-97a4-676056ae3a36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c965b31d0>]}
+2021-11-08 08:35:59.469309 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 3 seed files, 0 sources, 0 exposures
+2021-11-08 08:35:59.471937 (MainThread): 
+2021-11-08 08:35:59.472874 (MainThread): Acquiring new snowflake connection "master".
+2021-11-08 08:35:59.475641 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_LEAP_STAGING".
+2021-11-08 08:35:59.510950 (ThreadPoolExecutor-0_0): Using snowflake connection "list_LEAP_STAGING".
+2021-11-08 08:35:59.511589 (ThreadPoolExecutor-0_0): On list_LEAP_STAGING: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "connection_name": "list_LEAP_STAGING"} */
+
+    show terse schemas in database LEAP_STAGING
+    limit 10000
+2021-11-08 08:35:59.512068 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-08 08:36:00.916956 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.40 seconds
+2021-11-08 08:36:00.924670 (ThreadPoolExecutor-0_0): On list_LEAP_STAGING: Close
+2021-11-08 08:36:01.486066 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "create_LEAP_STAGING_DEFUALT".
+2021-11-08 08:36:01.487344 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "create_LEAP_STAGING_DEFUALT".
+2021-11-08 08:36:01.488173 (ThreadPoolExecutor-0_0): Creating schema "LEAP_STAGING.DEFUALT"
+2021-11-08 08:36:01.512497 (ThreadPoolExecutor-0_0): Using snowflake connection "create_LEAP_STAGING_DEFUALT".
+2021-11-08 08:36:01.513244 (ThreadPoolExecutor-0_0): On create_LEAP_STAGING_DEFUALT: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "connection_name": "create_LEAP_STAGING_DEFUALT"} */
+create schema if not exists LEAP_STAGING.DEFUALT
+2021-11-08 08:36:01.513730 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state closed
+2021-11-08 08:36:02.623207 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 1 in 1.11 seconds
+2021-11-08 08:36:02.628426 (ThreadPoolExecutor-0_0): On create_LEAP_STAGING_DEFUALT: Close
+2021-11-08 08:36:03.190470 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_LEAP_STAGING_DEFUALT".
+2021-11-08 08:36:03.222286 (ThreadPoolExecutor-1_0): Using snowflake connection "list_LEAP_STAGING_DEFUALT".
+2021-11-08 08:36:03.222894 (ThreadPoolExecutor-1_0): On list_LEAP_STAGING_DEFUALT: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "connection_name": "list_LEAP_STAGING_DEFUALT"} */
+
+    show terse objects in LEAP_STAGING.DEFUALT
+2021-11-08 08:36:03.223387 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-11-08 08:36:04.704033 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 0 in 1.48 seconds
+2021-11-08 08:36:04.714642 (ThreadPoolExecutor-1_0): On list_LEAP_STAGING_DEFUALT: Close
+2021-11-08 08:36:05.256850 (MainThread): 14:06:05 | Concurrency: 1 threads (target='dev')
+2021-11-08 08:36:05.257887 (MainThread): 14:06:05 | 
+2021-11-08 08:36:05.265095 (Thread-1): Began running node model.jaffle_shop.dbt_table
+2021-11-08 08:36:05.266680 (Thread-1): 14:06:05 | 1 of 1 START table model DEFUALT.dbt_table........................... [RUN]
+2021-11-08 08:36:05.268119 (Thread-1): Acquiring new snowflake connection "model.jaffle_shop.dbt_table".
+2021-11-08 08:36:05.268833 (Thread-1): Compiling model.jaffle_shop.dbt_table
+2021-11-08 08:36:05.279731 (Thread-1): Writing injected SQL for node "model.jaffle_shop.dbt_table"
+2021-11-08 08:36:05.282415 (Thread-1): finished collecting timing info
+2021-11-08 08:36:05.411375 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.dbt_table"
+2021-11-08 08:36:05.414476 (Thread-1): Using snowflake connection "model.jaffle_shop.dbt_table".
+2021-11-08 08:36:05.414963 (Thread-1): On model.jaffle_shop.dbt_table: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "node_id": "model.jaffle_shop.dbt_table"} */
+
+
+      create or replace transient table LEAP_STAGING.DEFUALT.dbt_table  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+	    select 1 as id
+	    union all
+	    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-11-08 08:36:05.415469 (Thread-1): Opening a new connection, currently in state closed
+2021-11-08 08:36:07.872256 (Thread-1): SQL status: SUCCESS 1 in 2.46 seconds
+2021-11-08 08:36:07.917192 (Thread-1): finished collecting timing info
+2021-11-08 08:36:07.917965 (Thread-1): On model.jaffle_shop.dbt_table: Close
+2021-11-08 08:36:08.472374 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1af38129-79e3-4490-97a4-676056ae3a36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c94ef2630>]}
+2021-11-08 08:36:08.474010 (Thread-1): 14:06:08 | 1 of 1 OK created table model DEFUALT.dbt_table...................... [SUCCESS 1 in 3.20s]
+2021-11-08 08:36:08.474792 (Thread-1): Finished running node model.jaffle_shop.dbt_table
+2021-11-08 08:36:08.515344 (MainThread): Acquiring new snowflake connection "master".
+2021-11-08 08:36:08.516770 (MainThread): 14:06:08 | 
+2021-11-08 08:36:08.517476 (MainThread): 14:06:08 | Finished running 1 table model in 9.04s.
+2021-11-08 08:36:08.518142 (MainThread): Connection 'master' was properly closed.
+2021-11-08 08:36:08.518657 (MainThread): Connection 'create_LEAP_STAGING_DEFUALT' was properly closed.
+2021-11-08 08:36:08.519134 (MainThread): Connection 'model.jaffle_shop.dbt_table' was properly closed.
+2021-11-08 08:36:08.536553 (MainThread): 
+2021-11-08 08:36:08.537499 (MainThread): Completed successfully
+2021-11-08 08:36:08.538202 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2021-11-08 08:36:08.539322 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c94a3d4a8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c965a7b38>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c96570470>]}
+2021-11-08 08:36:08.540392 (MainThread): Flushing usage events
+2021-11-08 08:40:08.880608 (MainThread): Running with dbt=0.21.0
+2021-11-08 08:40:09.852783 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/upvar/dbt-dir/jaffle_shop', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-08 08:40:09.853668 (MainThread): Tracking: tracking
+2021-11-08 08:40:09.854051 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3449b7ff98>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3449b7fac8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3451493048>]}
+2021-11-08 08:40:09.872168 (MainThread): Partial parsing not enabled
+2021-11-08 08:40:09.883171 (MainThread): Parsing macros/adapters.sql
+2021-11-08 08:40:09.952352 (MainThread): Parsing macros/catalog.sql
+2021-11-08 08:40:09.955627 (MainThread): Parsing macros/materializations/merge.sql
+2021-11-08 08:40:09.963745 (MainThread): Parsing macros/materializations/incremental.sql
+2021-11-08 08:40:09.980657 (MainThread): Parsing macros/materializations/table.sql
+2021-11-08 08:40:09.987026 (MainThread): Parsing macros/materializations/view.sql
+2021-11-08 08:40:09.989736 (MainThread): Parsing macros/materializations/seed.sql
+2021-11-08 08:40:09.997430 (MainThread): Parsing macros/core.sql
+2021-11-08 08:40:10.003210 (MainThread): Parsing macros/adapters/common.sql
+2021-11-08 08:40:10.083912 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-08 08:40:10.090662 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-08 08:40:10.095541 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-08 08:40:10.100031 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-08 08:40:10.123979 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-08 08:40:10.129377 (MainThread): Parsing macros/etc/query.sql
+2021-11-08 08:40:10.132270 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-08 08:40:10.136265 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-08 08:40:10.162139 (MainThread): Parsing macros/materializations/test.sql
+2021-11-08 08:40:10.182171 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-08 08:40:10.242191 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-08 08:40:10.246607 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-08 08:40:10.324827 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-08 08:40:10.369991 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-08 08:40:10.419523 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-08 08:40:10.446276 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-08 08:40:10.450743 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-08 08:40:10.489501 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-08 08:40:10.500339 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-08 08:40:10.518609 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-08 08:40:10.536768 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-08 08:40:10.540456 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-08 08:40:10.543595 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-08 08:40:10.547674 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-08 08:40:10.995790 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.dbt_table".
+2021-11-08 08:40:11.131872 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-08 08:40:11.137580 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-08 08:40:11.170012 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '734442b5-fa4f-4ca1-81f1-34838a666488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3449b34198>]}
+2021-11-08 08:40:11.179266 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '734442b5-fa4f-4ca1-81f1-34838a666488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3449b34da0>]}
+2021-11-08 08:40:11.179961 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 3 seed files, 0 sources, 0 exposures
+2021-11-08 08:40:11.183187 (MainThread): 
+2021-11-08 08:40:11.184146 (MainThread): Acquiring new snowflake connection "master".
+2021-11-08 08:40:11.186653 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_LEAP_STAGING".
+2021-11-08 08:40:11.221292 (ThreadPoolExecutor-0_0): Using snowflake connection "list_LEAP_STAGING".
+2021-11-08 08:40:11.221727 (ThreadPoolExecutor-0_0): On list_LEAP_STAGING: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "connection_name": "list_LEAP_STAGING"} */
+
+    show terse schemas in database LEAP_STAGING
+    limit 10000
+2021-11-08 08:40:11.221983 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-08 08:40:12.924425 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 3 in 1.70 seconds
+2021-11-08 08:40:12.932303 (ThreadPoolExecutor-0_0): On list_LEAP_STAGING: Close
+2021-11-08 08:40:13.571696 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_LEAP_STAGING_PUBLIC".
+2021-11-08 08:40:13.604628 (ThreadPoolExecutor-1_0): Using snowflake connection "list_LEAP_STAGING_PUBLIC".
+2021-11-08 08:40:13.605842 (ThreadPoolExecutor-1_0): On list_LEAP_STAGING_PUBLIC: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "connection_name": "list_LEAP_STAGING_PUBLIC"} */
+
+    show terse objects in LEAP_STAGING.PUBLIC
+2021-11-08 08:40:13.607010 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-11-08 08:40:15.293335 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 4 in 1.69 seconds
+2021-11-08 08:40:15.299434 (ThreadPoolExecutor-1_0): On list_LEAP_STAGING_PUBLIC: Close
+2021-11-08 08:40:15.987875 (MainThread): 14:10:15 | Concurrency: 1 threads (target='dev')
+2021-11-08 08:40:15.988936 (MainThread): 14:10:15 | 
+2021-11-08 08:40:15.994683 (Thread-1): Began running node model.jaffle_shop.dbt_table
+2021-11-08 08:40:15.996191 (Thread-1): 14:10:15 | 1 of 1 START table model PUBLIC.dbt_table............................ [RUN]
+2021-11-08 08:40:15.997631 (Thread-1): Acquiring new snowflake connection "model.jaffle_shop.dbt_table".
+2021-11-08 08:40:15.998373 (Thread-1): Compiling model.jaffle_shop.dbt_table
+2021-11-08 08:40:16.011986 (Thread-1): Writing injected SQL for node "model.jaffle_shop.dbt_table"
+2021-11-08 08:40:16.013487 (Thread-1): finished collecting timing info
+2021-11-08 08:40:16.133339 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.dbt_table"
+2021-11-08 08:40:16.136084 (Thread-1): Using snowflake connection "model.jaffle_shop.dbt_table".
+2021-11-08 08:40:16.136544 (Thread-1): On model.jaffle_shop.dbt_table: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "node_id": "model.jaffle_shop.dbt_table"} */
+
+
+      create or replace transient table LEAP_STAGING.PUBLIC.dbt_table  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+	    select 1 as id
+	    union all
+	    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-11-08 08:40:16.137033 (Thread-1): Opening a new connection, currently in state closed
+2021-11-08 08:40:18.509523 (Thread-1): SQL status: SUCCESS 1 in 2.37 seconds
+2021-11-08 08:40:18.534448 (Thread-1): finished collecting timing info
+2021-11-08 08:40:18.535162 (Thread-1): On model.jaffle_shop.dbt_table: Close
+2021-11-08 08:40:19.149659 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '734442b5-fa4f-4ca1-81f1-34838a666488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f34484ade80>]}
+2021-11-08 08:40:19.151732 (Thread-1): 14:10:19 | 1 of 1 OK created table model PUBLIC.dbt_table....................... [SUCCESS 1 in 3.15s]
+2021-11-08 08:40:19.152537 (Thread-1): Finished running node model.jaffle_shop.dbt_table
+2021-11-08 08:40:19.241321 (MainThread): Acquiring new snowflake connection "master".
+2021-11-08 08:40:19.243421 (MainThread): 14:10:19 | 
+2021-11-08 08:40:19.244208 (MainThread): 14:10:19 | Finished running 1 table model in 8.06s.
+2021-11-08 08:40:19.245069 (MainThread): Connection 'master' was properly closed.
+2021-11-08 08:40:19.245585 (MainThread): Connection 'model.jaffle_shop.dbt_table' was properly closed.
+2021-11-08 08:40:19.264490 (MainThread): 
+2021-11-08 08:40:19.265466 (MainThread): Completed successfully
+2021-11-08 08:40:19.266316 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2021-11-08 08:40:19.267427 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3449b06c88>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3449ab4240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3449ab4128>]}
+2021-11-08 08:40:19.268329 (MainThread): Flushing usage events
+2021-11-08 08:43:14.761952 (MainThread): Running with dbt=0.21.0
+2021-11-08 08:43:15.804969 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/upvar/dbt-dir/jaffle_shop', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-08 08:43:15.806383 (MainThread): Tracking: tracking
+2021-11-08 08:43:15.806983 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a59a4b7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a50727278>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a507272e8>]}
+2021-11-08 08:43:15.832336 (MainThread): Partial parsing not enabled
+2021-11-08 08:43:15.859717 (MainThread): Parsing macros/adapters.sql
+2021-11-08 08:43:15.956191 (MainThread): Parsing macros/catalog.sql
+2021-11-08 08:43:15.959386 (MainThread): Parsing macros/materializations/merge.sql
+2021-11-08 08:43:15.966324 (MainThread): Parsing macros/materializations/incremental.sql
+2021-11-08 08:43:15.979309 (MainThread): Parsing macros/materializations/table.sql
+2021-11-08 08:43:15.984058 (MainThread): Parsing macros/materializations/view.sql
+2021-11-08 08:43:15.986382 (MainThread): Parsing macros/materializations/seed.sql
+2021-11-08 08:43:15.993240 (MainThread): Parsing macros/core.sql
+2021-11-08 08:43:15.998616 (MainThread): Parsing macros/adapters/common.sql
+2021-11-08 08:43:16.085203 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-08 08:43:16.089422 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-08 08:43:16.092452 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-08 08:43:16.094765 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-08 08:43:16.107433 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-08 08:43:16.109724 (MainThread): Parsing macros/etc/query.sql
+2021-11-08 08:43:16.111306 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-08 08:43:16.113567 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-08 08:43:16.128566 (MainThread): Parsing macros/materializations/test.sql
+2021-11-08 08:43:16.138185 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-08 08:43:16.169411 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-08 08:43:16.172873 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-08 08:43:16.223610 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-08 08:43:16.256685 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-08 08:43:16.295240 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-08 08:43:16.316471 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-08 08:43:16.320002 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-08 08:43:16.347634 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-08 08:43:16.356187 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-08 08:43:16.370473 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-08 08:43:16.386836 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-08 08:43:16.391063 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-08 08:43:16.394407 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-08 08:43:16.399087 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-08 08:43:16.804097 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.dbt_table".
+2021-11-08 08:43:16.911621 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-08 08:43:16.916299 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-08 08:43:16.949730 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '21895ef0-e9ef-49db-b805-569802a94113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a5060db70>]}
+2021-11-08 08:43:16.959504 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '21895ef0-e9ef-49db-b805-569802a94113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a50601c88>]}
+2021-11-08 08:43:16.960103 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 3 seed files, 0 sources, 0 exposures
+2021-11-08 08:43:16.962348 (MainThread): 
+2021-11-08 08:43:16.963239 (MainThread): Acquiring new snowflake connection "master".
+2021-11-08 08:43:16.965849 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_LEAP_STAGING".
+2021-11-08 08:43:17.002110 (ThreadPoolExecutor-0_0): Using snowflake connection "list_LEAP_STAGING".
+2021-11-08 08:43:17.002479 (ThreadPoolExecutor-0_0): On list_LEAP_STAGING: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "connection_name": "list_LEAP_STAGING"} */
+
+    show terse schemas in database LEAP_STAGING
+    limit 10000
+2021-11-08 08:43:17.002732 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-08 08:43:18.699790 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 3 in 1.70 seconds
+2021-11-08 08:43:18.707694 (ThreadPoolExecutor-0_0): On list_LEAP_STAGING: Close
+2021-11-08 08:43:19.346088 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_LEAP_STAGING_PUBLIC".
+2021-11-08 08:43:19.373584 (ThreadPoolExecutor-1_0): Using snowflake connection "list_LEAP_STAGING_PUBLIC".
+2021-11-08 08:43:19.374146 (ThreadPoolExecutor-1_0): On list_LEAP_STAGING_PUBLIC: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "connection_name": "list_LEAP_STAGING_PUBLIC"} */
+
+    show terse objects in LEAP_STAGING.PUBLIC
+2021-11-08 08:43:19.374695 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-11-08 08:43:20.882597 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 5 in 1.51 seconds
+2021-11-08 08:43:20.889289 (ThreadPoolExecutor-1_0): On list_LEAP_STAGING_PUBLIC: Close
+2021-11-08 08:43:21.534795 (MainThread): 14:13:21 | Concurrency: 1 threads (target='dev')
+2021-11-08 08:43:21.535759 (MainThread): 14:13:21 | 
+2021-11-08 08:43:21.541900 (Thread-1): Began running node model.jaffle_shop.dbt_table
+2021-11-08 08:43:21.543294 (Thread-1): 14:13:21 | 1 of 1 START table model PUBLIC.dbt_table............................ [RUN]
+2021-11-08 08:43:21.545048 (Thread-1): Acquiring new snowflake connection "model.jaffle_shop.dbt_table".
+2021-11-08 08:43:21.545775 (Thread-1): Compiling model.jaffle_shop.dbt_table
+2021-11-08 08:43:21.556061 (Thread-1): Writing injected SQL for node "model.jaffle_shop.dbt_table"
+2021-11-08 08:43:21.557264 (Thread-1): finished collecting timing info
+2021-11-08 08:43:21.689290 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.dbt_table"
+2021-11-08 08:43:21.692863 (Thread-1): Using snowflake connection "model.jaffle_shop.dbt_table".
+2021-11-08 08:43:21.693551 (Thread-1): On model.jaffle_shop.dbt_table: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "my-snowflake-db", "target_name": "dev", "node_id": "model.jaffle_shop.dbt_table"} */
+
+
+      create or replace transient table LEAP_STAGING.PUBLIC.dbt_table  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+	    select 1 as id
+	    union all
+	    select 2 as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-11-08 08:43:21.694076 (Thread-1): Opening a new connection, currently in state closed
+2021-11-08 08:43:24.153613 (Thread-1): SQL status: SUCCESS 1 in 2.46 seconds
+2021-11-08 08:43:24.195140 (Thread-1): finished collecting timing info
+2021-11-08 08:43:24.195823 (Thread-1): On model.jaffle_shop.dbt_table: Close
+2021-11-08 08:43:24.864564 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21895ef0-e9ef-49db-b805-569802a94113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a57c8c668>]}
+2021-11-08 08:43:24.866192 (Thread-1): 14:13:24 | 1 of 1 OK created table model PUBLIC.dbt_table....................... [SUCCESS 1 in 3.32s]
+2021-11-08 08:43:24.867032 (Thread-1): Finished running node model.jaffle_shop.dbt_table
+2021-11-08 08:43:24.893335 (MainThread): Acquiring new snowflake connection "master".
+2021-11-08 08:43:24.895504 (MainThread): 14:13:24 | 
+2021-11-08 08:43:24.896866 (MainThread): 14:13:24 | Finished running 1 table model in 7.93s.
+2021-11-08 08:43:24.898141 (MainThread): Connection 'master' was properly closed.
+2021-11-08 08:43:24.899055 (MainThread): Connection 'model.jaffle_shop.dbt_table' was properly closed.
+2021-11-08 08:43:24.921116 (MainThread): 
+2021-11-08 08:43:24.922205 (MainThread): Completed successfully
+2021-11-08 08:43:24.923097 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2021-11-08 08:43:24.925165 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a57c8c668>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a59a4b7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a4db84ba8>]}
+2021-11-08 08:43:24.927671 (MainThread): Flushing usage events
