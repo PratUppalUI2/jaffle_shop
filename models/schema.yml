@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: dbt_table
+  - name: leap_sample_table
     description: This table has basic information
 
     columns:
