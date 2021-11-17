@@ -18,7 +18,7 @@
 )*/
 
 select *,
-    101 as source_id
+    '101' as source_id
 from leap_sample_table
 
 /*select *
