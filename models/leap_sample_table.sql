@@ -18,7 +18,8 @@
 )*/
 
 select *,
-    101 as source_id
+    101 as source_id,
+    null as batch_id
 from leap_sample_table
 
 /*select *
