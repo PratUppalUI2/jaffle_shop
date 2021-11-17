@@ -17,10 +17,8 @@
 
 )*/
 
-select id,
-    case
-       when src_id IS NULL then 8
-    end as src_id
+select *,
+    101 as source_id
 from leap_sample_table
 
 /*select *
