@@ -16,9 +16,21 @@
 	    select 2 as id
 
 )*/
-
+/*
 select *,
     101 as source_id
+from leap_sample_table
+*/
+select id,
+     data,
+     case
+        when source_id IS NULL then 101
+        else source_id
+    end as source_id,
+    case
+        when batch_id IS NULL then concat(101,'_',current_timestamp)
+        else batch_id
+    end as batch_id
 from leap_sample_table
 
 /*select *
