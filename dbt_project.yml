@@ -16,7 +16,7 @@ clean-targets:
     - "dbt_modules"
     - "logs"
 
-on-run-end: ["{{update_source_id()}}","{{update_batch_id()}}"]
+      #on-run-end: ["{{update_source_id()}}","{{update_batch_id()}}"]
 
 models:
   jaffle_shop:
