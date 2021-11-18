@@ -16,11 +16,12 @@
 	    select 2 as id
 
 )*/
-/*
+
 select *,
     101 as source_id
+    101_9876 as batch_id
 from leap_sample_table
-*/
+/*
 select id,
      data,
      case
@@ -32,7 +33,7 @@ select id,
         else batch_id
     end as batch_id
 from leap_sample_table
-
+*/
 /*select *
 from source_data
 */
